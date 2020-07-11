@@ -1,8 +1,8 @@
 ---
 layout: post-layout.njk 
-title: How To Get Rich Quick
-date: 2019-06-01
-tags: ['post']
+title: We're live!
+date: 2020-07-11
+tags: ['100days']
 ---
 <!-- Excerpt Start -->
 This is the next bitcoin!
