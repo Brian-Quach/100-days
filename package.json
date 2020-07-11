@@ -1,0 +1,25 @@
+{
+  "name": "100-days",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eveventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-Quach/100-days.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brian-Quach/100-days/issues"
+  },
+  "homepage": "https://github.com/Brian-Quach/100-days#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "moment": "^2.27.0"
+  }
+}
