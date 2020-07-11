@@ -3,3 +3,4 @@ README.md
 
 # Unit tests should be ignored by Eleventy
 tests/
+node_modules/

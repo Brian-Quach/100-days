@@ -12,8 +12,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
-
+  
   eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.setUseGitIgnore(false);
 };
 
 function extractExcerpt(article) {

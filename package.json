@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eveventy"
+    "build": "gulp build && npx eleventy",
+    "dev": "gulp build & gulp watch & npx eleventy --serve",
+    "debug": "gulp build & gulp watch & DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,11 @@
   "homepage": "https://github.com/Brian-Quach/100-days#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "moment": "^2.27.0"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.1.0",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1"
   }
 }
