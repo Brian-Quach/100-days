@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp build && npx eleventy",
     "dev": "gulp build & gulp watch & npx eleventy --serve",
-    "debug": "gulp build & gulp watch & DEBUG=* npx eleventy"
+    "debug": "gulp build & gulp watch & DEBUG=* npx eleventy",
+    "deploy": "gulp build && npx eleventy --output=/var/www/100days.briiquach.com/html"
   },
   "repository": {
     "type": "git",

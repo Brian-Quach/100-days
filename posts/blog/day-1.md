@@ -5,9 +5,7 @@ date: 2020-07-11
 tags: ['100days']
 ---
 <!-- Excerpt Start -->
-This is the next bitcoin!
+Hello internet!
 <!-- Excerpt End -->
-Buy the latest and greatest cryptocurrency that no-one has heard of.
- 
-## Legal Stuff
-We do not accept any liability for any loss or damage.
+
+Day one! I started today by integrating a sass preprocessor into the build process of this site. This was done using Gulp, which I haven't had any experience with up until now. I then spent some time configuring Nginx for subdomains so I could host this blog on my website.
