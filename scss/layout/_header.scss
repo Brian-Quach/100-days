@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+    display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5em; 
+
+    a {
+        color: #1F2232;
+        margin: 0 0.5em;
+        font-size: 20px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #88A0A8;
+    }
+
+    .header-home {
+        margin-right: auto;
+        font-size: 30px;
+    }
+}

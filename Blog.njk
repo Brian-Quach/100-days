@@ -2,21 +2,12 @@
 layout: base-layout.njk
 pagination:
   data: collections.100days
-  size: 3
+  size: 100
   reverse: true
   alias: posts
 ---
 
 <div class="recent-posts">
-  <div class="post-wrapper section-description">
-      <h1>
-        What am I working on?
-      </h1>
-      <p>
-        A day to day log of the stuff I've done throughout this challenge.
-      </p>
-  </div>
-
   {% for post in posts %}
     <div class="post-wrapper">
       <h1 class="post-title">

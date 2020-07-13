@@ -3,19 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Eleventy Blog</title>
+        <title>100 Days of Code</title>
 
         <link rel="stylesheet" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <header>
-            <a href="/" class="link--home">100-Days</a>
-            <a href="/About" class="link--about">About</a>
-        </header>
+        {% include "header.njk" %}
         <main>
             {{ content | safe }}
         </main>
-        <footer>Site Footer</footer>
+        {% include "footer.njk" %}
     </body>
 </html>
