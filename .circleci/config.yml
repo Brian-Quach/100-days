@@ -11,11 +11,11 @@ jobs:
           steps:
             - run: npm install
   deploy-prod:
-    docker:
-      - image: circleci/node:8.10
+    executor:
+      name: node/default
     steps:
       - checkout
-      -- run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP “./deploy_project.sh”
+      -- run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP “./deploy100days”
 
 workflows:
     build-and-test:
