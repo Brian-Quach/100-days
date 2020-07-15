@@ -11,8 +11,6 @@ jobs:
           steps:
             - run: npm install
   deploy-prod:
-    executor:
-      name: node/default
     steps:
       -- run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP “./deploy100days”
 
