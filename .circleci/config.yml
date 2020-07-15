@@ -25,7 +25,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-          
+
       - run: npm run build
       - persist_to_workspace:
           root: "~"
@@ -37,15 +37,13 @@ jobs:
     steps:
       - attach_workspace:
           at: ./_site
-      # - run: mkdir ~/.ssh
-      # - run: ssh-keyscan $SSH_HOST >> ~/.ssh/known_hosts
+      - run: mkdir ~/.ssh
+      - run: ssh-keyscan $DROPLET_IP >> ~/.ssh/known_hosts
       - run: sudo apt install rsync
       - run:
-          name: Deploy Over SSH
+          name: Deploy Over RSYNC
           command: |
-            rsync -avz -e "ssh" --progress * $DROPLET_USER@$DROPLET_IP:/var/www/100days.briiquach.com/html
-#            scp -r build/* $SSH_USER@$SSH_HOST:build
-      # - run: ssh $SSH_USER@$SSH_HOST 'chmod -R 755 ~/build'
+            rsync -avz -e "ssh" --progress ./_site/r/_site/* $DROPLET_USER@$DROPLET_IP:/var/www/100days.briiquach.com/html
 
 workflows:
   version: 2.1
