@@ -1,7 +1,7 @@
 ---
 layout: post-layout.njk 
 title: Pokedex done for now
-date: 2020-07-20
+date: 2020-07-21
 tags: ['100days']
 ---
 <!-- Excerpt Start -->
