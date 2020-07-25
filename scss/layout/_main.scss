@@ -7,3 +7,11 @@ main {
     padding: .5em 2em; 
 
 }
+
+article {
+    img {
+        width: 100%;
+        max-height: 40vh;
+        object-fit: cover;
+    }
+}

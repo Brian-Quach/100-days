@@ -1,19 +1,16 @@
 ---
-layout: post-layout.njk 
+layout: project-layout.njk 
 title: Pokedex
+image: https://brianquach-100-days.s3.ca-central-1.amazonaws.com/projects/pokedex.png
 description: A Pokedex built with Html
-date: 2020-07-22
+date: 2020-07-23
 tags: ['projects']
 ---
-<!-- Excerpt Start -->
-So I came across this thing on Twitter called the #100DaysOfCode challenge and I figured I'd take a stab at it.
-<!-- Excerpt End -->
-It's pretty simple, two rules.
-1) Code for at least an hour each day for 100 days
-2) Tweet your progress with the #100DaysOfCode hashtag 
+So the first thing I worked on was a simple Pokedex built using PokeAPI and HTML. This was done on Codepen since it was a single page, and pretty simple. It is able to search for any Pokemon by its number and display the Name, Type, Height and Weight. Take a look at it over [here](https://codepen.io/briiquach/live/3af8cf5ad3d4031ff2b337e969ab97a7)!
 
-Being absolutely incompetent when it comes to social media, I'll probably skip the latter more often than not. But this 100 day thing sounds like fun. 
+Things that I learned through this included:
+1) Got familiar with PokeAPI
+2) Basic usage of CSS Grid
+3) Learned how to use clip-path to draw basic shapes
 
-Before starting this challenge, I needed a way to document my progress. While a github readme probably would have worked, This is about challenging myself and stepping out of my comfort zone. Hence the whole diving into static site generators. Today I started a git repository for this project, installed 11ty, and created a basic blog with it. 
 
-Anyways, I'm super hyped about this challenge. Can't wait to get started.

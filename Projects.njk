@@ -7,15 +7,15 @@ pagination:
   alias: projects
 ---
 
-<div class="recent-posts">
+<div class="recent-projects">
   {% for project in projects %}
-    <div class="post-wrapper">
-      <h1 class="post-title">
+    <div class="project-tile">
+      <img src={{project.data.image}}>
+      <h1 class="project-title">
         {{ project.data.title }}
       </h1>
       {{ project.data.description }}
-      <a href="{{ project.url | url }}">Read more</a>
-      <time datetime="{{ projects.date | dateIso }}">{{ projects.date | dateReadable }}</time>
+      <a href="{{ project.url | url }}">Learn more</a>
     </div>
   {% endfor %}
 
